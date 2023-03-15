@@ -3,11 +3,11 @@ nlist = list(map(int, input().split()))
 
 Max = 0
 
-for i in nlist:
-    for j in nlist:
-        for k in nlist:
+for i in range(N):
+    for j in range(i + 1, N):
+        for k in range(j + 1, N):
 
-            n = i + j + k
-            if M >= n > Max and len({i, j, k}) == 3:
+            n = nlist[i] + nlist[j] + nlist[k]
+            if M >= n > Max:
                 Max = n
 print(Max)
