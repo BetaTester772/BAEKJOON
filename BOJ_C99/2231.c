@@ -1,8 +1,8 @@
 #include "stdio.h"
 
-int num(int n) {
+int split_sum(int n) {
     if (n == n % 10) return n;
-    return n % 10 + num(n / 10);
+    return n % 10 + split_sum(n / 10);
 }
 
 int main() {
@@ -10,7 +10,7 @@ int main() {
 
     scanf("%d", &N);
     for (i = 0; i < N; ++i) {
-        a = num(i) + i;
+        a = split_sum(i) + i;
         if (a == N) {
             printf("%d", i);
             return 0;
