@@ -16,6 +16,10 @@ int main() {
                 int n = nlist[i] + nlist[j] + nlist[k];
                 if (M >= n && n > Max)
                     Max = n;
+                if (Max == M) {
+                    printf("%d", Max);
+                    return 0;
+                }
             }
         }
     }
