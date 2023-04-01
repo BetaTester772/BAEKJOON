@@ -4,7 +4,7 @@
 > https://www.acmicpc.net/
 
 ## Description
-### !{number} : solved, but not submmit.
+### !{number} : solved(maybe?), but not submmit.
 ### _{number} : solving.
 
 ## Who you are?
