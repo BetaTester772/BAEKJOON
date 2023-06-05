@@ -1,25 +1,17 @@
 #include "stdio.h"
-#include "stdlib.h"
-
-int compare(const void *a, const void *b) {
-    int num1 = *(int *) a;
-    int num2 = *(int *) b;
-    if (num1 < num2)
-        return -1;
-    if (num1 > num2)
-        return 1;
-    return 0;
-}
 
 int main() {
-    int N;
+    int nlist[10002] = {0,}, N;
     scanf("%d", &N);
-    int arr[N];
+
     for (int i = 0; i < N; ++i) {
-        scanf("%d", &arr[i]);
+        int j;
+        scanf("%d", &j);
+        nlist[j]++;
     }
-    qsort(arr, sizeof(arr) / sizeof(int), sizeof(int), compare);
-    for (int i = 0; i < N; ++i) {
-        printf("%d\n", arr[i]);
+    for (int i = 0; i < 10002; ++i) {
+        for (int j = 0; j < nlist[i]; ++j) {
+            printf("%d\n", i);
+        }
     }
 }
