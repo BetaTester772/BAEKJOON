@@ -3,4 +3,4 @@ project(BAEKJOON C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(BAEKJOON 10989.c)
+add_executable(BAEKJOON "제 7회 천하제일 코딩대회 Open Contest/B.c")
